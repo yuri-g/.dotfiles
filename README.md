@@ -1,8 +1,9 @@
 ## My dotfiles
 
 ### What's included:
-* .gvimrc config
+* gVim config
 * [Bad Wolf](https://github.com/sjl/badwolf) colorscheme: 
+* ZSH config
 
 ### Installation
 ```Shell
