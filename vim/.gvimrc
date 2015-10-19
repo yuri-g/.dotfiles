@@ -8,9 +8,11 @@ set relativenumber nu
 set cursorline
 
 filetype indent on
-set wildmenu
-set backupdir=∼/.backup
-set directory=∼/.backup
+set backup 
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+set backupskip=/tmp/*,/private/tmp/* 
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+set writebackup
 
 " }}}
 " Colors {{{
