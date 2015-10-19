@@ -9,6 +9,8 @@ set cursorline
 
 filetype indent on
 set wildmenu
+set backupdir=∼/.backup
+set directory=∼/.backup
 
 " }}}
 " Colors {{{
