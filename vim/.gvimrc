@@ -1,7 +1,3 @@
-" Pathogen {{{
-call pathogen#infect()
-call pathogen#helptags()
-" }}}
 " General {{{
 set modeline
 set relativenumber nu
@@ -54,15 +50,6 @@ set foldmethod=indent
 
 nnoremap <space> za
 " }}}
-" Movement {{{
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-nnoremap j gj
-nnoremap k gk
-" }}}
 " CtrlP {{{
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
@@ -73,6 +60,15 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:ctrlp_working_path_mode = 'ra'
 map <leader>f :CtrlP<cr>
 map <leader>F :CtrlP %%<cr>
+" }}}
+" Movement {{{
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+nnoremap j gj
+nnoremap k gk
 " }}}
 " Misc key remaps {{{
 let mapleader=","
