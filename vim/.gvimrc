@@ -15,6 +15,14 @@ set writebackup
 syntax enable
 colorscheme badwolf
 " }}}
+" Misc key remaps {{{
+let mapleader=","
+nnoremap # <NOP>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+" }}}
 " Whitespace {{{
 set nowrap
 set tabstop=2
@@ -70,13 +78,13 @@ nnoremap <c-l> <c-w>l
 nnoremap j gj
 nnoremap k gk
 " }}}
-" Misc key remaps {{{
-let mapleader=","
-" }}}
 " Gvim specific {{{
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+" }}}
+" {{{
+map <leader>n :NERDTreeToggle<CR>
 " }}}
 " vim:foldmethod=marker:foldlevel=0
