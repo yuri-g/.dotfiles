@@ -16,3 +16,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 # }}}
 # vim:foldmethod=marker:foldlevel=0
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

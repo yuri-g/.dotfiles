@@ -3,12 +3,15 @@ set modeline
 set relativenumber nu
 set cursorline
 
+
 filetype indent on
 set backup 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
 set backupskip=/tmp/*,/private/tmp/* 
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
 set writebackup
+
+set tags=./tags;
 
 " }}}
 " Colors {{{
@@ -22,9 +25,18 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+set list
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>          " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the left of the screen
 " }}}
 " Whitespace {{{
-set nowrap
+set nowrap  
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
