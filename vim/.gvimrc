@@ -1,8 +1,23 @@
+set nocompatible
+
+" Vundle {{{
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
+
+
+" }}}
 " General {{{
+
 set modeline
 set relativenumber nu
 set cursorline
-
 
 filetype indent on
 set backup 
@@ -99,4 +114,5 @@ set guioptions-=L  "remove left-hand scroll bar
 " {{{
 map <leader>n :NERDTreeToggle<CR>
 " }}}
+
 " vim:foldmethod=marker:foldlevel=0
