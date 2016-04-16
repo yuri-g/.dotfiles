@@ -15,6 +15,11 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+client.focused #3f8ac2 #096BAA #00DA8E
+#client.unfocused (0,0,0,1) #00000 #00DA87
+
+
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -30,7 +35,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -147,5 +152,5 @@ exec --no-startup-id nitrogen --restore
 
 exec compton --config ~/.config/compton/compton.conf &
 
-new_window pixel
+new_window pixel 1
 
