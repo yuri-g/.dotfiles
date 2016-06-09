@@ -142,7 +142,10 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	i3bar_command i3bar -t
-        status_command i3status
+  status_command i3status
+  colors {
+    background #003459
+  }
 }
 
 # Gaps:
@@ -155,4 +158,3 @@ exec --no-startup-id nitrogen --restore
 exec compton --config ~/.config/compton/compton.conf &
 
 new_window pixel 2
-
