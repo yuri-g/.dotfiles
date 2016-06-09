@@ -15,7 +15,9 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
-client.focused #3f8ac2 #096BAA #00DA8E
+client.focused #FF5E5B #FF5E5B #FF5E5B #FF5E5B
+
+
 #client.unfocused (0,0,0,1) #00000 #00DA87
 
 
@@ -152,5 +154,5 @@ exec --no-startup-id nitrogen --restore
 
 exec compton --config ~/.config/compton/compton.conf &
 
-new_window pixel 1
+new_window pixel 2
 
